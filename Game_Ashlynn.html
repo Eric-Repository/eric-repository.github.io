@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Portolio
+	Template from: html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Game: Ashlynn</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Return to Main</a>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Code</a></li>
+                    <li><a href="index2.html">3d Models</a></li>
+                    <li><a href="index3.html">Animation</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://linkedin.com/in/eric-lin-13771318b" target="blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Eric-Repository" target="blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+
+                <!-- Post -->
+                <section class="post">
+                    <header class="major">
+                        <ul class="actions">
+                            <li><a id="backButton" href="index.html" class="button icon solid solo fa-arrow-left scrolly">Continue</a></li>
+                        </ul>
+                        <h1>
+                            Game:<br />
+                            Ashlynn
+                        </h1>
+                        <p>A 2 semester (6 month) project/game created when I was an undergrad at York University. I (Eric Lin) worked with: Hao Xu, Janus Chui, Rouming Lin to create this game.<p />
+                        <div class="image main"><img src="images/Game_Ashlynn/AshlynnCover.png" alt="Ashlynn game cover" /></div>
+                    </header>
+                    <p>This game was created on "Unity Game Engine". In this game you play as a girl that explores multiple biomes in her dreams. Each biome has its unique form that you can use. A dolphin in the ocean, a dinosaur in the city, and a bird in the sky. Cellular automata was used to create the voxel terrain. Additionally, a seperate camera had its view rendered onto a plane to simulate/create a portal that would link the biomes.</p>
+                    <div class="image main"><img src="images/Game_Ashlynn/AshlynnCellularAutomataMap.png" alt="Cellular Automata Image" /></div>
+                    <p>I worked on the procedural map generation of this game. Cellular automata was used to create "rooms". The concept is to create a grid populated with 0's and 1's. 0's function as an "open space", while 1's function as "walls". The "game of life" is then used to get rid of isolated cells. Once rooms are generated paths are "carved" into walls to connect each room. The result will be a "map" that looks similar to a cave system (depicted in the image above).</p>
+                    <div class="image main"><img src="images/Game_Ashlynn/Ashlynn.png" alt="Procedural Map Image" /></div>
+                    <p>After the terrain of the world has been generated the world would then randomly populate the map with trees, rocks, flowers, and other details. The placement of the details is determined using the same seed that generates the cellular automata used for the terrain.</p>
+                    <div class="image main"><img src="images/Game_Ashlynn/AshlynnDolphin.png" alt="Fish School Boids Image" /></div>
+                    <p>In addition to the terrain/map generation I also worked on the AI implementation of "Boids". This very basic AI was used on the "Fish" in the aquatic world. It allows the fish to swim in schools. The code I used for this was derived from one of my earlier projects: <a href="Project_SquidsAI.html">Squids AI</a>. Each fish AI will space themselves so that they are an ideal space away from other fish, and the environment. This allows the size/tightness of the fish school to be changed by either increasing or decreasing the ideal space.</p>
+                    <div class="image main"><img src="images/Game_Ashlynn/AshlynnDino.png" alt="Fish School Boids Image" /></div>
+                    <p>Beyond that, I also worked on the "player controller". In this game the player swaps between "forms". By pressing buttons 1 through 4, the player can swap between human, bird, dolphin, and dinosaur. Gravity, movement speed, jump height are variables that differ between each playable form.</p>
+                    <p>Code and other assets I developed for the game can be found on the <a href="https://github.com/Eric-Repository/Game_Ashlynn">Game_Ashlynn</a> page of my Github.</p>
+                    <div class="container">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/_pBElhuuCsU?si=-VWudaTo8RmXh-8m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+			<!-- Footer -->
+				<footer>
+				</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<!-- <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+			</div>
+
+			<div id="backToTopButton"  title="Go to top"><a href = "#header" class = "button icon solid solo fa-arrow-up scrolly"></a></div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/extra.js"></script>
+			<script src="assets/js/backButton.js"></script>
+
+	</body>
+</html>

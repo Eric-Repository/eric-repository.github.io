@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML>
+<!--
+    Portfolio
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Project: Game Of Life</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Return to Main</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Code</a></li>
+                <li><a href="index2.html">3d Models</a></li>
+                <li><a href="index3.html">Animation</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://linkedin.com/in/eric-lin-13771318b" target="blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/Eric-Repository" target="blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <ul class="actions">
+                        <li><a id="backButton" href="index.html" class="button icon solid solo fa-arrow-left scrolly">Continue</a></li>
+                    </ul>
+                    <h1>
+                        Project:<br />
+                        Game of Life
+                    </h1>
+                    <p>A project started when I was an undergrad at York Univerisity. This project simulates "Conway's Game of Life" with small edits and additions made.</p>
+                </header>
+                <div class="image main"><img src="images/Project_GameOfLife/GameOfLifeCover.png" /></div>
+                <p>This project is an adaptation of "Conway's Game of Life" (GoL) that aims to simulate life on a petri dish. By generating a grid of integers ranging from -1 to 2. Each integer represents a state on the grid. -1 represents a dead cell, while the integers 0 to 2 represent a colour Red, Green, or Blue (RGB). Each colour represents a different bacteria culture. By checking adjacent cells the program determines what state each cell will be in. Cells surrounded by a majority of one colour will be converted to that colour. While the GoL originally had a condition of "dying by overpopulation" where a cell would die if they were surrounded by multiple cells of the same value/integer this has been edited out in what I have created.</p>
+                <p>In addition, a mouse event was added. This event takes the on click x and y coordinates to get the cell at the on click position. The user can then drag the mouse to "disturb" the cell cultures.</p>
+                <p>Code for this project can be found on the <a href="https://github.com/Eric-Repository/Project_Game-of-Life">Project_Game-Of-Life</a> page of my Github.</p>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+        </footer>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <!-- <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
+        </div>
+    </div>
+
+    <div id="backToTopButton" title="Go to top"><a href="#header" class="button icon solid solo fa-arrow-up scrolly"></a></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/extra.js"></script>
+    <script src="assets/js/backButton.js"></script>
+</body>
+</html>
